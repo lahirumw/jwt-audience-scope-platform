@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: customers-api
+server:
+  port: 8082
+app:
+  jwt:
+    issuer: http://localhost:8080
+    jwk-set-uri: http://localhost:8080/.well-known/jwks.json
+    audience: customers-api
